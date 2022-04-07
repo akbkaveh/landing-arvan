@@ -99,6 +99,12 @@ li {
   font-weight: 700;
   src: url(/fonts/YekanBakhBold.woff) format("woff");
 }
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 800;
+  src: url(/fonts/YekanBakhHeavy.woff) format("woff");
+}
 
 body {
   font-family: YekanBakh;
@@ -192,11 +198,12 @@ body {
   background-color: #fff;
   box-shadow: 0 30px 50px -3px rgb(0 0 0 / 10%);
   height: 80px;
-  position: relative;
+  position: sticky;
   z-index: 4000;
   padding: 0 16px;
   display: flex;
   align-items: center;
+  top: 0;
 }
 .right-part-header {
   display: flex;
@@ -403,6 +410,8 @@ body {
   color: #00baba;
 }
 .box-signup-event-btn {
+  width: 30%;
+  justify-content: flex-end;
   display: flex;
   align-items: center;
 }
@@ -429,6 +438,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-bottom: 6rem;
+  margin-top: 7rem;
 }
 .arvan-product-title {
   color: #7a90aa;
@@ -463,7 +473,7 @@ body {
 .arvan-product-tab-one-heading {
   color: #7a90aa;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: bold;
   padding-top: 3px;
   position: relative;
   transition: color 0.2s ease-in-out;
@@ -633,7 +643,7 @@ body {
 }
 .cooperation-with-businesses-left-part {
   position: relative;
-  width: 60%;
+  width: 77%;
 }
 .cooperation-with-businesses-left-part img {
   position: absolute;
@@ -684,8 +694,9 @@ body {
 .arvan-network
 {
   display: flex;
-  margin-top: 10rem;
+  margin-top: 15rem;
   margin-bottom: 4rem;
+
 
 }
 .arvan-network-title
@@ -701,6 +712,7 @@ body {
   font-size: 16px;
   margin-bottom: 24px;
   color: #8499b7;
+
 }
 .arvan-network-title-1::after
 {
@@ -738,7 +750,7 @@ body {
 {
   display: flex;
   background-color: #eef2f7;
-  margin: 0 16px;
+  margin: 0 30px;
   border-radius: 32px;
   overflow: hidden;
   padding: 2rem;
@@ -980,4 +992,216 @@ display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+.boxes-about-arvan
+{
+  display: flex;
+  flex-wrap: wrap;
+justify-content: center;
+  margin: 2rem auto;
+}
+.box-about-arvan
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  background: #fff;
+  padding: 24px 60px;
+  border-radius: 16px ;
+  transition: all ease-in .2s;
+  box-shadow: 0 30px 50px -3px #cfdae5;
+  margin:.7rem;
+}
+.box-about-arvan:hover
+{
+  border:3px solid #00baba;
+  outline: none;
+}
+
+.box-about-arvan h3
+{
+  color: #344456;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+.box-about-arvan p
+{
+  color: #344456;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+footer
+{
+  background-color: #eef2f7;
+  border-radius: 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 4rem;
+  margin: 4rem 1rem;
+  flex-direction: column;
+}
+.menu-footer
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+.col-footer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+.col-footer h2
+{
+  color: #253343;
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.col-footer-menu
+{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.col-footer-menu li
+{
+  padding: .5rem 0;
+}
+.col-footer-menu li a
+{
+  color: #566e88;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 700;
+  gap: 8px;
+  transition: .2s ease-in-out;
+}
+.col-footer-menu-1
+{
+  display: flex;
+
+}
+.col-footer-menu-1 span
+{
+  align-items: center;
+  background-color: #d1dbe8;
+  border-radius: 12px;
+  display: inline-flex;
+  height: 32px;
+  justify-content: center;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding-top: 1px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
+  text-align: center;
+  transition: .2s ease-in-out;
+  padding: 16px;
+  font-size: 12px;
+}
+.col-footer-menu li a:hover
+{
+  color: #00baba;
+}
+.footer-menu-horizental
+{
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  border-bottom: 2px solid #b2c2d6;
+  padding: 1rem 0;
+}
+.footer-menu-horizental-part-right
+{
+  display: flex;
+}
+.footer-menu-horizental-part-left
+{
+  display: flex;
+}
+.footer-menu-horizental-part-right-item 
+{
+  padding: 1rem;
+}
+.footer-menu-horizental-part-right-item a
+{
+  color: #566e88;
+  margin-right: 3rem;
+}
+.footer-menu-horizental-part-right-item a:hover
+{
+  color: #00baba;
+}
+.custom-m
+{
+  margin-right: 0 !important;
+}
+.custom-for-footer
+{
+  background: #f5f7fa;
+  margin-right: 10px;
+}
+.footer-menu-horizental-part-left ul 
+{
+  display: flex;
+}
+
+.footer-menu-horizental-part-left ul a
+{
+  align-items: center;
+  background-color: #f5f7fa;
+  border-radius: 12px;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+  margin: 0 .3rem;
+}
+.border-none
+{
+  border: 0;
+  display: flex;
+  align-items: center;
+}
+.footer-menu-horizental-part-right svg
+{
+  max-height: 41px;
+  min-height: 41px;
+}
+.footer-menu-horizental-part-right h2
+{
+  color: #27304a;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 10px;
+    margin-right: 1rem;
+}
+.custom-part
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.custom-part svg
+{
+  margin:0 .8rem;
+}
+.img-100
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
